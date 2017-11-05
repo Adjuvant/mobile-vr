@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Neo
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Body
+    m_Weight: 1
+  - m_Path: Neo_Reference
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg/Neo_LeftFoot
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_LeftUpLeg/Neo_LeftLeg/Neo_LeftFoot/Neo_LeftToeBase
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_RightUpLeg
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_RightUpLeg/Neo_RightLeg
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_RightUpLeg/Neo_RightLeg/Neo_RightFoot
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_RightUpLeg/Neo_RightLeg/Neo_RightFoot/Neo_RightToeBase
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm/Neo_LeftForeArm
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_LeftShoulder/Neo_LeftArm/Neo_LeftForeArm/Neo_LeftHand
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm/Neo_RightForeArm
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_RightShoulder/Neo_RightArm/Neo_RightForeArm/Neo_RightHand
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_Neck
+    m_Weight: 1
+  - m_Path: Neo_Reference/Neo_Hips/Neo_Spine/Neo_Spine1/Neo_Spine2/Neo_Neck/Neo_Head
+    m_Weight: 1
