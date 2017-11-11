@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ObjectChanger : MonoBehaviour {
 
+	// The objects you want to display are held in a List object
+	// that you can  access in theinspector using the 
+	// [SerializeField] attribute
 	[SerializeField]
 	List<GameObject> objet_d_art;
 
-	[SerializeField]
-	GameObject anchor;
-
+	// Reference to currently displayed object
 	public GameObject currentObject;
 
 	int indexOfObject;
@@ -21,11 +22,14 @@ public class ObjectChanger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		// Simple way to test functionality in the preview mode.
 		if (Input.GetKeyDown (KeyCode.P)) {
 			ChangeObject ();
 		}
 	}
 
+	// Method to change the currently displayed object
+	// By turning on or off the GameObjects
 	void SetObject (int value)
 	{
 		// Safety boolean check
@@ -37,6 +41,9 @@ public class ObjectChanger : MonoBehaviour {
 		currentObject.SetActive (true);
 	}
 
+	// Method to tell the script to do stuff,
+	// Triggered by the event system by plumbing in events
+	// or direct references from other scripts.
 	public void ChangeObject(){
 		int l = objet_d_art.Count;
 		if (indexOfObject + 1 >= l)
