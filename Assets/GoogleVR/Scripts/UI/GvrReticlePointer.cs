@@ -100,10 +100,12 @@ public class GvrReticlePointer : GvrBasePointer
 		// TD: Just to be safe.
 		if (gazedAt != null && gazeStartTime > 0f) {
 			// TD: Indicate amount of time passed (shape would be better but this is simple)
-			MaterialComp.SetColor ("_Color", Color.HSVToRGB (0, ((Time.time - gazeStartTime) / clickTime), 1));
+			MaterialComp.SetColor ("_Color", 
+				Color.HSVToRGB (0, ((Time.time - gazeStartTime) / clickTime), 1));
 
 			// TD: Check if enough time has passed to act as click.
-			// and make sure event can only fire once on an object.
+			// Check if the object is a gaze timer one,
+			// and make sure event can only fire once.
 			if (Time.time - gazeStartTime > clickTime &&
 			    ExecuteEvents.CanHandleEvent<ITimedInputHandler> (gazedAt)) {
 
@@ -112,6 +114,15 @@ public class GvrReticlePointer : GvrBasePointer
 				
 				ResetGazeTimer();
 			}
+
+//			// Another version, simpler but not scalable
+//			if (Time.time - gazeStartTime > clickTime &&
+//				gazedAt.GetComponent<TimedInputObject>()) {
+//
+//				gazedAt.GetComponent<TimedInputObject>().HandleTimedInput();				
+//
+//				ResetGazeTimer();
+//			}
 		}
 	}
 
